@@ -1,0 +1,23 @@
+<view class="wrapper">
+  <view class="left-wrapper">
+    <scroll-view class="left-scroll" scroll-y="true">
+      <view bind:tap="leftTap" data-index="{{index1}}" class="{{currentIndex===index1?'active':'cate-left' }}" wx:for="{{cateLeft}}" wx:for-index="index1" wx:for-item="item1" wx:key="*this">
+        {{item1}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class="cate-right">
+    <scroll-view scroll-top="{{toTop}}" class="right-scroll" scroll-y="true">
+      <view class="wrapper-right" wx:for="{{rightList.children}}" wx:key="cat_id" wx:for-item="item2" wx:for-index="index2">
+        <view class="big-title">{{item2.cat_name}}</view>
+        <view class="cate-item-wrapper">
+          <navigator url="/pages/goods_list/index?cid={{item3.cat_id}}" class="cate-item" wx:for="{{item2.children}}" wx:key="cat_id" wx:for-item="item3" wx:for-index="index3">
+            <image class="" src="{{item3.cat_icon}}" mode="widthFix"></image>
+            <view>{{item3.cat_name}}</view>
+            
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

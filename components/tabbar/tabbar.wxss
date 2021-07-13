@@ -1,0 +1,16 @@
+.wrapper {
+  height: 90rpx;
+  display: flex;
+}
+.wrapper view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+.wrapper .active {
+  border-bottom: 1px solid var(--themeColor);
+  color: var(--themeColor);
+}
+/*# sourceMappingURL=./tabbar.wxss.map */

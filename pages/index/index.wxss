@@ -1,0 +1,21 @@
+.wrapper {
+  padding-top: 90rpx;
+}
+.wrapper .pyg_index {
+  position: fixed;
+  z-index: 9;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.wrapper .nav_index {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.wrapper .nav_index image {
+  width: 20vw;
+}
+/*# sourceMappingURL=./index.wxss.map */

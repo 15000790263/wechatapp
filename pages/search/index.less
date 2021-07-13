@@ -1,0 +1,48 @@
+page {
+  background-color: #ddd;
+
+}
+
+.wrapper {
+  font-size: 26rpx;
+
+  .search {
+    display: flex;
+    padding: 20rpx;
+
+    .search_content {
+      flex: 7;
+
+      input {
+        background-color: #fff;
+        height: 80rpx;
+      }
+    }
+
+    .cancle {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-left: 20rpx solid #ddd;
+    }
+  }
+
+  navigator {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+
+    view {
+      line-height: 46rpx;
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
+      padding: 5rpx;
+
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

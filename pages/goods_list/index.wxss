@@ -1,0 +1,16 @@
+.wrapper-outer {
+  padding-top: 180rpx;
+  height: 100vh;
+}
+.wrapper-outer SearchInput {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+.wrapper-outer tabbar {
+  position: fixed;
+  width: 100vw;
+  top: 90rpx;
+  background-color: #fff;
+}
+/*# sourceMappingURL=./index.wxss.map */

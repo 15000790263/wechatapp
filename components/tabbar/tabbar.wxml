@@ -1,0 +1,3 @@
+<view class="wrapper">
+  <view class="{{currentIndex === index?'active':''}}" bind:tap = "titleTap" data-index = "{{index}}" wx:for="{{titles}}" wx:key="*this">{{item}}</view>
+</view>

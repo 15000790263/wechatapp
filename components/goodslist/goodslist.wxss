@@ -1,0 +1,36 @@
+.wrapper {
+  width: 100vw;
+  padding: 5px;
+}
+.wrapper .good-list-item {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.wrapper .good-list-item .left-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+.wrapper .good-list-item .left-img image {
+  width: 70%;
+}
+.wrapper .good-list-item .right-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  flex: 3;
+}
+.wrapper .good-list-item .right-info .info {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  font-size: 24rpx;
+}
+.wrapper .good-list-item .right-info .price {
+  font-size: 32rpx;
+  color: var(--themeColor);
+}
+/*# sourceMappingURL=./goodslist.wxss.map */

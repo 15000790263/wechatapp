@@ -1,0 +1,18 @@
+<tabbar titles="{{['商品收藏','品牌收藏','店铺收藏','浏览足迹']}}"></tabbar>
+<view class="categ">
+  <text class="all_show">全部</text>
+  <text>正在热卖</text>
+  <text>即将上线</text>
+</view>
+<!-- <view>
+  <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" wx:for="{{colls}}" wx:key="goods_id">
+    <view class="img">
+      <image mode="widthFix" src="{{item.pics[0].pics_mid}}"></image>
+    </view>
+    <view class="info">
+      <text>{{item.goods_name}}</text>
+      <text class="price">￥{{item.goods_price}}</text>
+    </view>
+  </navigator>
+</view> -->
+<goodslist goods="{{colls}}"></goodslist>

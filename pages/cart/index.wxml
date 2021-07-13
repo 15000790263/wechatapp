@@ -1,0 +1,60 @@
+<view class="wrapper">
+  <view wx:if="{{!address.userName}}" class="address_btn">
+    <button bind:tap="handleChooseAddress" type="primary" plain>获取收货地址</button>
+  </view>
+  <view class="address_info" wx:else>
+    <view class="per_info">
+      <text>收货人：{{address.userName}}</text>
+      <text>电话：{{address.telNumber}}</text>
+    </view>
+    <view>
+      {{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+    </view>
+  </view>
+
+  <view class="cart_content">
+    <view class="cart_title">购物车</view>
+    <view class="small_tips" wx:if="{{!cart.length}}"><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa4064bdab5f6c800ed664014f3eb7d13a4dd25b3138d0-hYHe07_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627482206&t=db86c532a17ac2363a4b88dca7de40c0" mode="widthFix">
+      
+    </image></view>
+    <view wx:else class="cart_main">
+      <view class="cart_item" wx:for="{{cart}}" wx:key="good_id">
+        <view class="cart_chk_wrap">
+          <checkbox-group bindchange="handleSelect" data-id="{{item.goods_id}}">
+            <checkbox checked="{{item.checked}}" color="#f00"></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="cart_img_wrap">
+          <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            <image mode="widthFix" src="{{item.pics[0].pics_mid}}"></image>
+          </navigator>
+        </view>
+        <view class="cart_info_wrap">
+          <view class="pro_title">{{item.goods_name}}</view>
+          <view class="price_count">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="count">
+              <button size="mini" bind:tap="handleSubbtn" data-id="{{item.goods_id}}">-</button>
+              <text>{{item.count}}</text>
+              <button size="mini" bind:tap="handleAddbtn" data-id="{{item.goods_id}}">+</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer_tool">
+    <checkbox-group bindchange="handleSelectAll">
+      <checkbox disabled="{{isDisabled}}" checked="{{isSelectAll}}" color="#f00"></checkbox>
+      全选
+    </checkbox-group>
+    <view class="total_price">
+      <view>
+        合计：
+        <text class="all_price">￥{{totalPrice}}</text>
+      </view>
+      <text class="tips">包含运费</text>
+    </view>
+    <view class="to_buy" bind:tap="handlePay">结算（{{selectCount}}）</view>
+  </view>
+</view>

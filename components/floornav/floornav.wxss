@@ -1,0 +1,21 @@
+.container .title-wrapper {
+  width: 100vw;
+}
+.container .title-wrapper image {
+  width: 100%;
+}
+.container .content-wrapper {
+  overflow: hidden;
+}
+.container .content-wrapper view {
+  padding: 5px;
+  float: left;
+  width: 250rpx;
+}
+.container .content-wrapper view:nth-last-child(-n + 4) image {
+  height: calc(250rpx * 386 / 464 - 13px);
+}
+.container .content-wrapper view navigator image {
+  width: 100%;
+}
+/*# sourceMappingURL=./floornav.wxss.map */

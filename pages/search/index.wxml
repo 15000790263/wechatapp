@@ -1,0 +1,22 @@
+<view class="wrapper">
+  <view class="search">
+    <view class="search_content">
+      <input bindinput="hindleInput" value="{{inValue}}" type="text" placeholder="請輸入您要搜索的商品" />
+    </view>
+    <view class="cancle" 
+    wx:if="{{isFocus}}"
+    bind:tap="handleCancle"
+    >取消</view>
+  </view>
+  <navigator 
+  wx:for="{{searchContent}}" 
+  wx:key="goods_id"
+  url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+  >
+    <view >{{item.goods_name}}</view>
+  </navigator>
+  <!-- <icon class="" type="success|success_no_circle|info|warn|waiting|cancel|download|search|clear" size="23" color="">
+    
+  </icon> -->
+ 
+</view>

@@ -1,0 +1,4 @@
+/* pages/auth/index.wxss */
+view{
+  padding-top: 40rpx;
+}

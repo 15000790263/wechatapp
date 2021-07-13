@@ -1,0 +1,70 @@
+<view class="user_info_wrap">
+  <navigator class="user_login" wx:if="{{!userInfo.language}}" url="/pages/login/index">
+    <view>登录</view>
+  </navigator>
+  <view wx:else class="user_img_wrap">
+    <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">+{{userInfo.nickName}}+</view>
+    </view>
+  </view>
+</view>
+<view class="user_content">
+  <!-- 收藏的店铺行 -->
+  <view class="collect">
+    <navigator>
+      <view class="counter">0</view>
+      <view class="collect_item">收藏的店铺</view>
+    </navigator>
+    <navigator url="/pages/collect/index">
+      <view class="counter">{{colls.length}}</view>
+      <view class="collect_item">收藏的商品</view>
+    </navigator>
+    <navigator>
+      <view class="counter">0</view>
+      <view class="collect_item">关注的商品</view>
+    </navigator>
+    <navigator>
+      <view class="counter">0</view>
+      <view class="collect_item">我的足迹</view>
+    </navigator>
+  </view>
+  <!-- 我的订单一行 -->
+  <view class="my_order">我的订单</view>
+  <!-- 关于订单状态行 -->
+  <view class="about_order">
+    <navigator url="/pages/order/index?type=1">
+      <view class="order_icon iconfont .icon-ding_dan"></view>
+      <view>全部订单</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=2">
+      <view class="order_icon iconfont .icon-gou_wu_che2"></view>
+      <view>代付款</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=3">
+      <view class="order_icon iconfont .icon-fukuantongzhi"></view>
+      <view>待收货</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=4">
+      <view class="order_icon iconfont .icon-tuihuotuikuan_dianpu"></view>
+      <view>退款/退货</view>
+    </navigator>
+  </view>
+  <view class="my_address">收货地址管理</view>
+  <view class="connect">
+    <text>联系客服</text>
+    <text>400-618-4000</text>
+    <button open-type="contact"></button>
+    <!-- <button open-type=""></button> -->
+  </view>
+  <view class="my_order">
+    意见反馈
+    <button open-type="feedback"></button>
+  </view>
+  <view class="my_order">关于我们</view>
+  <view class="share_other">
+    推荐给其他人
+    <button open-type="share"></button>
+  </view>
+</view>

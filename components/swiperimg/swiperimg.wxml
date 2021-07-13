@@ -1,0 +1,10 @@
+<view class="swiper">
+  <swiper class="swiperWrapper" autopla="{{true}}" indicator-dots circular interval="8000">
+    <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+      <navigator bind:tap="abc" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+        <image src="{{item.image_src}}" mode="widthFix">
+        </image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabbar":"../../components/tabbar/tabbar",
+    "goodslist":"../../components/goodslist/goodslist"
+
+  },
+  "navigationBarTitleText": "商品收藏"
+}

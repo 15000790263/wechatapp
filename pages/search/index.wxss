@@ -1,0 +1,40 @@
+page {
+  background-color: #ddd;
+}
+.wrapper {
+  font-size: 26rpx;
+}
+.wrapper .search {
+  display: flex;
+  padding: 20rpx;
+}
+.wrapper .search .search_content {
+  flex: 7;
+}
+.wrapper .search .search_content input {
+  background-color: #fff;
+  height: 80rpx;
+}
+.wrapper .search .cancle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-left: 20rpx solid #ddd;
+}
+.wrapper navigator {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.wrapper navigator view {
+  line-height: 46rpx;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 5rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*# sourceMappingURL=./index.wxss.map */

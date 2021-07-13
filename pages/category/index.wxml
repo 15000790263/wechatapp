@@ -1,0 +1,4 @@
+<view class="category-wrapper">
+  <SearchInput class="search-input"></SearchInput>
+  <categorylist bind:leftTap="leftTap" cateLeft="{{cateLeft}}" cateList="{{cateList}}" rightList="{{rightList}}"></categorylist>
+</view>

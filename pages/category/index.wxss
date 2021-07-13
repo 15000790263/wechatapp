@@ -1,0 +1,11 @@
+/* pages/category/index.wxss */
+.category-wrapper{
+  position: relative;
+}
+.search-input{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}

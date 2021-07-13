@@ -1,0 +1,169 @@
+page{
+  background-color: #eee;
+}
+
+.p1() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+
+  .user_login {
+    position: relative;
+
+    view {
+      position: absolute;
+      top: 20vh;
+      left: 50%;
+      transform: translate(-50%);
+      width: 150rpx;
+      line-height: 90rpx;
+      text-align: center;
+      font-weight: normal;
+      font-size: 40rpx;
+      color: #fff;
+      border: rgba(255, 255, 255, 0.685) solid 1px;
+      border-radius: 15rpx;
+
+      // margin-top: 20vh;
+    }
+  }
+
+  .user_img_wrap {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+
+    .user_bg {
+      .p1;
+      transform: translate(-50%, -50%);
+      height: 100vw;
+      width: 100vw;
+      // 高斯模糊
+      filter: blur(30rpx);
+    }
+
+    .user_info {
+      width: 30vw;
+      height: 20vh;
+      .p1;
+      transform: translate(-50%, -40%);
+      // background-color: #bfa;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .user_icon {
+        width: 60%;
+        border-radius: 50%;
+      }
+
+      .user_name {
+        color: #fff;
+        font-size: 28rpx;
+      }
+    }
+  }
+}
+
+
+.p2(){
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.user_content {
+
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, .2);
+
+  width: 94vw;
+  background-color: rgba(255, 255, 255, 0.822);
+  color:#444;
+  font-size: 24rpx;
+  .collect {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 20rpx solid #eee;
+    padding: 10rpx 20rpx;
+    navigator {
+      // .p2;
+      .counter {
+        color: #e00;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .my_order {
+    line-height: 45rpx;
+    padding: 10rpx 20rpx;
+    border-bottom: 2rpx solid #eee;
+    position: relative;
+    button{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: #bfa;
+    }
+  }
+
+  .about_order {
+    display: flex;
+    padding: 10rpx 0;
+    navigator {
+      .p2();
+      .order_icon {
+        color: #e00;
+      }
+    }
+  }
+
+  .my_address{
+    line-height: 45rpx;
+    padding: 10rpx 20rpx;
+    border-bottom: 20rpx solid #eee;
+    border-top: 20rpx solid #eee;
+  }
+
+  .connect {
+    line-height: 45rpx;
+    padding: 10rpx 20rpx;
+    border-bottom: 2rpx solid #eee;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    button{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: #bfa;
+    }
+
+  }
+  .share_other{
+    .my_order();
+    border-top: 20rpx solid #eee;
+    
+  }
+}

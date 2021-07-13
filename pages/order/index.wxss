@@ -1,0 +1,27 @@
+.order_wrapper {
+  font-size: 28rpx;
+}
+.order_wrapper navigator {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 24vw;
+  padding: 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+.order_wrapper navigator .order_num {
+  display: flex;
+  justify-content: space-between;
+}
+.order_wrapper navigator .order_price {
+  display: flex;
+  justify-content: space-between;
+}
+.order_wrapper navigator .order_price text.price {
+  color: #d00;
+}
+.order_wrapper navigator .order_date {
+  display: flex;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=./index.wxss.map */

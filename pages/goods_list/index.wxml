@@ -1,0 +1,5 @@
+<view class="wrapper-outer">
+  <SearchInput></SearchInput>
+  <tabbar bind:titleTap="titleTap" titles='{{["综合","销量","价格"]}}'></tabbar>
+  <goodslist goods="{{goods}}"></goodslist>
+</view>

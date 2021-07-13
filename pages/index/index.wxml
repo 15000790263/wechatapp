@@ -1,0 +1,18 @@
+<view class="wrapper">
+  <view class="pyg_index">
+  <SearchInput></SearchInput>
+</view>
+<view class="swiper_index">
+  <swiperimg swiperList="{{swiperList}}"></swiperimg>
+</view>
+<view class="nav_index">
+  <view wx:for="{{cateList}}" wx:key="name">
+    <navigator url="/pages/category/index" open-type="switchTab">
+      <image src="{{item.image_src}}" mode="widthFix" ></image>
+    </navigator>
+  </view>
+</view>
+<view class="floor_index">
+  <floornav floorList="{{floorList}}"></floornav>
+</view>
+</view>

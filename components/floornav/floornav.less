@@ -1,0 +1,31 @@
+.container {
+  .title-wrapper {
+    width: 100vw;
+
+    image {
+      width: 100%;
+    }
+  }
+
+  .content-wrapper {
+    overflow: hidden;
+    view {
+      padding: 5px;
+      float: left;
+      width: 250rpx;
+
+      &:nth-last-child(-n + 4) {
+        image {
+          height: calc(250rpx * 386 / 464 - 13px);
+        }
+      }
+
+      navigator {
+        image {
+          // border-radius: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<tabbar bind:titleTap="titleTap" id="tabbar" titles="{{titles}}"></tabbar>
+<view class="order_wrapper">
+  <navigator url="" 
+  wx:for="{{orders}}" 
+  wx:key="order_id"
+  >
+    <view class="order_num">
+      <text>订单编号</text><text>{{item.order_number}}</text>
+    </view>
+    <view class="order_price">
+      <text>订单价格</text><text class="price">￥{{item.order_price}}</text>
+    </view>
+    <view class="order_date">
+      <text>订单日期</text><text>{{date[index]}}</text>
+    </view>
+  </navigator>
+</view>

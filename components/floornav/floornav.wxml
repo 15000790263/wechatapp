@@ -1,0 +1,13 @@
+<view class="container" wx:for="{{floorList}}" wx:key="*this">
+  <view class="title-wrapper">
+    <image class="title" src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+  </view>
+  <view class="content-wrapper">
+    <view wx:for="{{item.product_list}}" wx:key="name">
+      <!-- navigator里面也可以遍历 -->
+      <navigator url="">
+        <image class="content" src="{{item.image_src}}" mode="{{index === 0?'widthFix':'scaleToFill'}}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

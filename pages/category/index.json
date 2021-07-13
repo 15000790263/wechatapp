@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "categorylist":"../../components/categorylist/categorylist"
+  },
+  "navigationBarTitleText": "分类"
+}

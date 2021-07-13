@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100vw;
+  padding: 5px;
+
+  .good-list-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+
+    .left-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 2;
+
+      image {
+        width: 70%;
+      }
+    }
+
+    .right-info {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      flex: 3;
+
+      .info {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        word-break: break-all;
+
+        font-size: 24rpx;
+      }
+
+      .price {
+        font-size: 32rpx;
+        color: var(--themeColor);
+      }
+    }
+  }
+}
